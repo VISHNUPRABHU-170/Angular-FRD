@@ -1,1 +1,18 @@
-<p>signup works!</p>
+<div class="main">
+    <div class="box">
+        <div class="header" *ngIf="condition; else signup">
+            <div (click)="Up()" style="background-color: white;">Signup</div>
+            <div (click)="In()">Signin</div>
+        </div>
+        <ng-template #signup>
+            <div class="header">
+                <div (click)="Up()">Signup</div>
+                <div (click)="In()" style="background-color: white;">Signin</div>
+            </div>
+        </ng-template>
+        <div *ngFor="let items of arr" class="input">
+            <input type="text" placeholder={{items}} />
+        </div>
+        <button type="submit">{{title}}</button>
+    </div>
+</div>
