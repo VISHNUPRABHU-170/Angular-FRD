@@ -29,8 +29,9 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-right: 50px;
+    margin-right: 40px;
     font-size: 22px;
+    font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -46,6 +47,10 @@ header nav ul li:last-child {
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
+    box-shadow: 0 -5px 5px -5px white,
+    0 5px 5px -5px white,
+    -5px 0 5px -5px white,
+    5px 0 5px -5px white;;
 }
 
 header nav ul li:last-child:hover {
