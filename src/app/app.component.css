@@ -3,6 +3,7 @@
 header {
     display: grid;
     grid-template-columns: 80px 1fr 1fr;
+    border: 0px solid white;
     background-color: gray;
     height: 70px;
     color: white;
