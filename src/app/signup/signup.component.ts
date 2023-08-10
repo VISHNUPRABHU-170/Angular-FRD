@@ -46,7 +46,7 @@ export class SignupComponent {
     this.userConfirmPassword = form.value.cpassword;
     this.popShow(form);
     this.popHide(form);
-    if(!(this.showname && this.showmail && this.showcpass && this.showpass)){
+    if((this.showname==false && this.showmail==false && this.showcpass==false && this.showpass==false)){
       this.router.navigate(['']);
     }
 
@@ -92,7 +92,7 @@ export class SignupComponent {
     this.userPassword = form.value.password;
     this.popShoww(form);
     this.popHidee(form);
-    if(!(this.showmaill && this.showpasss)){
+    if((this.showmaill==false && this.showpasss==false)){
       this.router.navigate(['']);
     }
   }
